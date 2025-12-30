@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiberNetInfra Solutions | Vikas - Raigarh</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        :root { --primary: #00d2ff; --accent: #3a7bd5; --dark: #0a0f1d; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background: #f0f4f8; overflow-x: hidden; color: #333; }
+
+        /* Navigation */
+        nav { background: #0a0f1d; padding: 12px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--primary); }
+        .logo { font-family: 'Orbitron'; color: white; font-size: 1.1rem; text-decoration: none; }
+        .logo span { color: var(--primary); }
+
+        /* Smaller Animated Hero */
+        .hero { 
+            height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+            position: relative; overflow: hidden; background: #000;
+        }
+        .hero-img { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.4; animation: zoomOut 20s infinite alternate; }
+        .hero-content { z-index: 2; padding: 20px; }
+        .hero-content h1 { font-family: 'Orbitron'; font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+        
+        /* Sliding Company Info Bar */
+        .sliding-bar { background: var(--accent); color: white; padding: 10px 0; overflow: hidden; white-space: nowrap; }
+        .sliding-track { display: inline-block; animation: scrollText 30s linear infinite; font-weight: bold; }
+        .sliding-track span { margin-right: 50px; text-transform: uppercase; font-size: 0.9rem; }
+
+        /* Services Grid */
+        .section { padding: 60px 8%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+        .card { 
+            background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: 0.4s; border-top: 4px solid var(--primary);
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 3rem; color: var(--accent); margin: 25px 0; display: block; animation: pulse 2s infinite; }
+        .card h3 { font-family: 'Orbitron'; font-size: 0.9rem; padding: 0 15px; margin-bottom: 15px; }
+        .card p { font-size: 0.85rem; padding: 0 20px 20px; color: #666; }
+
+        /* Pricing Table */
+        .price-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 10px; overflow: hidden; }
+        .price-table th { background: var(--dark); color: white; padding: 15px; text-align: left; }
+        .price-table td { padding: 12px 15px; border-bottom: 1px solid #eee; font-weight: 500; }
+        .price-table tr:hover { background: #f9f9f9; }
+
+        /* Contact Section */
+        .contact-container { 
+            background: var(--dark); color: white; border-radius: 20px; padding: 40px; 
+            display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px;
+        }
+
+        /* Buttons & WA */
+        .btn-wa { background: #25D366; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold; transition: 0.3s; }
+        .float-wa { position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; }
+
+        /* Animations */
+        @keyframes scrollText { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        @keyframes zoomOut { from { transform: scale(1.2); } to { transform: scale(1); } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo">FIBER<span>NET</span>INFRA SOLUTIONS</a>
+    <a href="https://wa.me/918085223033" class="btn-wa"><i class="fab fa-whatsapp"></i> Chat with Vikas</a>
+</nav>
+
+<section class="hero">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600" class="hero-img" alt="Tech Background">
+    <div class="hero-content">
+        <h1 class="animate__animated animate__backInDown">FIBERNETINFRA SOLUTIONS</h1>
+        <p>Expert Networking & IT Infrastructure in Raigarh</p>
+    </div>
+</section>
+
+<div class="sliding-bar">
+    <div class="sliding-track">
+        <span>🔹 10+ Years Experience</span>
+        <span>🔹 Specialist in Fiber Splicing & OTDR</span>
+        <span>🔹 Expert Network Configuration</span>
+        <span>🔹 CCTV & Security Integration</span>
+        <span>🔹 Reliable IT Infrastructure in Kirodimal Raigarh</span>
+        <span>🔹 High-Quality Structured Cabling</span>
+        <span>🔹 Fastest Service Turnaround Time</span>
+    </div>
+</div>
+
+<section class="section">
+    <h2 style="font-family: 'Orbitron'; margin-bottom: 30px;">Our Specialized Services</h2>
+    <div class="grid">
+        <div class="card animate__animated animate__fadeIn">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Fiber Splicing</h3>
+            <p>Fusion splicing, OTDR testing, and professional termination.</p>
+        </div>
+        <div class="card animate__animated animate__fadeIn">
+            <i class="fas fa-network-wired"></i>
+            <h3>Network Setup</h3>
+            <p>Managed Switches, Routers, Firewalls, and VLAN config.</p>
+        </div>
+        <div class="card animate__animated animate__fadeIn">
+            <i class="fas fa-server"></i>
+            <h3>IT Infrastructure</h3>
+            <p>Rack fixing, Jack panel dressing, and LIU termination.</p>
+        </div>
+        <div class="card animate__animated animate__fadeIn">
+            <i class="fas fa-tools"></i>
+            <h3>Structured Cabling</h3>
+            <p>LAN & Camera cable laying with proper tagging.</p>
+        </div>
+        <div class="card animate__animated animate__fadeIn">
+            <i class="fas fa-laptop-medical"></i>
+            <h3>Hardware Repair</h3>
+            <p>Professional Desktop, Laptop, and Printer repair services.</p>
+        </div>
+        <div class="card animate__animated animate__fadeIn">
+            <i class="fas fa-video"></i>
+            <h3>CCTV Security</h3>
+            <p>IP Camera, DVR, and NVR configuration & remote viewing.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: #eef2f5;">
+    <h2 style="font-family: 'Orbitron';">Service Pricing (₹)</h2>
+    <div style="overflow-x: auto; margin-top: 30px;">
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Service Category</th>
+                    <th>Price Details (Rupees)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Basic Device Configuration</td><td>₹1,000 /Device</td></tr>
+                <tr><td>Advanced Network Configuration</td><td>₹3,000 /Device</td></tr>
+                <tr><td>Fiber Splicing</td><td>₹100 /Core</td></tr>
+                <tr><td>IO Punching</td><td>₹10 /Per IO</td></tr>
+                <tr><td>Cable Laying (LAN/Camera)</td><td>₹10 /Meter</td></tr>
+                <tr><td>Rack Fixing (Wall/Floor)</td><td>₹100 /Rack</td></tr>
+                <tr><td>Jack Panel / LIU Fixing</td><td>₹10 /Unit</td></tr>
+                <tr><td>Camera / DVR / NVR Config</td><td>₹200 /Device</td></tr>
+                <tr><td>Desktop & Laptop Service</td><td>₹300 (Service) + Market Price for Parts</td></tr>
+                <tr><td>Printer Repair Service</td><td>₹500 (Service) + Market Price for Parts</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="contact-container">
+        <div style="text-align: left;">
+            <h2 style="color: var(--primary); font-family: 'Orbitron'; margin-bottom: 20px;">Vikas - FiberNetInfra</h2>
+            <p style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt" style="color:var(--primary)"></i> Kirodimal Raigarh, CG</p>
+            <p style="margin-bottom: 15px;"><i class="fas fa-phone-alt" style="color:var(--primary)"></i> +91 8085223033</p>
+            <p style="margin-bottom: 15px;"><i class="fas fa-envelope" style="color:var(--primary)"></i> vikas01234das@gmail.com</p>
+            <p style="opacity: 0.8; font-size: 0.9rem;">We provide end-to-end IT Infrastructure and high-end networking solutions in Raigarh and surrounding areas.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+            <h3 style="margin-bottom: 20px;">Order a Service</h3>
+            <p>Click below to send your requirements directly to my WhatsApp.</p>
+            <a href="https://wa.me/918085223033?text=Hi%20Vikas,%20I%20want%20to%20order%20the%20following%20service%20from%20FiberNetInfra%20Solutions:%20" class="btn-wa" style="width: 100%; text-align: center; margin-top: 20px;">Send Order Request</a>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/918085223033?text=Hi%20Vikas,%20I%20need%20IT%20Infrastructure%20services.%20Please%20contact%20me." class="float-wa" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+    <p>&copy; 2025 FIBERNETINFRA SOLUTIONS - Developed for Vikas, Raigarh.</p>
+</footer>
+
+</body>
+</html>
